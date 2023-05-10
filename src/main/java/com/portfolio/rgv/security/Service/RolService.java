@@ -7,7 +7,7 @@ package com.portfolio.rgv.Security.Service;
 
 import com.portfolio.rgv.Security.Entity.Rol;
 import com.portfolio.rgv.Security.Enums.RolNombre;
-import com.portfolio.rgv.Security.Repository.iRolRepository;
+import com.portfolio.rgv.Security.Repository.IRolRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
 @Transactional
 public class RolService {
     @Autowired
-    iRolRepository irolRepository;
+    IRolRepository irolRepository;
     
         public Optional<Rol> getByRolNombre(RolNombre rolNombre){
         return irolRepository.findByRolNombre(rolNombre);

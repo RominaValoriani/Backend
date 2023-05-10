@@ -1,7 +1,7 @@
 com\portfolio\rgv\Repository\IPersonaRepository.class
-com\portfolio\rgv\Security\Repository\iRolRepository.class
 com\portfolio\rgv\Repository\REducacion.class
 com\portfolio\rgv\Security\MainSecurity.class
+com\portfolio\rgv\Security\Repository\IUsuarioRepository.class
 com\portfolio\rgv\Security\Service\RolService.class
 com\portfolio\rgv\Service\Shys.class
 com\portfolio\rgv\Security\Dto\NuevoUsuario.class
@@ -13,6 +13,7 @@ com\portfolio\rgv\Entity\hys.class
 com\portfolio\rgv\Security\jwt\JwtProvider.class
 com\portfolio\rgv\Entity\Educacion.class
 com\portfolio\rgv\Security\Controller\AuthController.class
+com\portfolio\rgv\Security\Repository\IRolRepository.class
 com\portfolio\rgv\Dto\dtoEducacion.class
 com\portfolio\rgv\Dto\dtoPersona.class
 com\portfolio\rgv\Security\Controller\Mensaje.class
@@ -35,5 +36,4 @@ com\portfolio\rgv\Repository\Rhys.class
 com\portfolio\rgv\Service\SExperiencia.class
 com\portfolio\rgv\Security\Service\UsuarioService.class
 com\portfolio\rgv\Security\Service\UserDetailsImpl.class
-com\portfolio\rgv\Security\Repository\iUsuarioRepository.class
 com\portfolio\rgv\Controller\CEducacion.class

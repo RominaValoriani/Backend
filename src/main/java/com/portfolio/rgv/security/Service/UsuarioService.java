@@ -6,7 +6,7 @@
 package com.portfolio.rgv.Security.Service;
 
 import com.portfolio.rgv.Security.Entity.Usuario;
-import com.portfolio.rgv.Security.Repository.iUsuarioRepository;
+import com.portfolio.rgv.Security.Repository.IUsuarioRepository;
 import java.util.Optional;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 @Transactional
 public class UsuarioService {
     @Autowired
-    iUsuarioRepository iusuarioRepository;
+    IUsuarioRepository iusuarioRepository;
     
     public Optional<Usuario> getByNombreUsuario(String nombreUsuario){
         return iusuarioRepository.findByNombreUsuario(nombreUsuario);
