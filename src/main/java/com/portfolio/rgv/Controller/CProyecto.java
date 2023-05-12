@@ -40,6 +40,15 @@ public class CProyecto {
         return new ResponseEntity(list, HttpStatus.OK);   
     }
     
+    @GetMapping("/detail/{id}")
+    public ResponseEntity<Proyecto> getById(@PathVariable("id")int id){
+        if(!sProyecto.existsById(id)){
+            return new ResponseEntity(new Mensaje("No existe el id"), HttpStatus.BAD_REQUEST);
+        }
+        Proyecto proyecto = sProyecto.getOne(id).get();
+        return new ResponseEntity(proyecto, HttpStatus.OK);
+    } 
+    
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id){
         if(!sProyecto.existsById(id)){
@@ -70,9 +79,22 @@ public class CProyecto {
     if(!sProyecto.existsById(id)){
         return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
     }
-    if(sProyecto.existsByNombreP(nombreP.))    
-        
-        
+    if(sProyecto.existsByNombreP(dtoproyecto.getNombreP()) && sProyecto.getByNombreP(dtoproyecto.getNombreP()).get().getId() != id){
+        return new ResponseEntity(new Mensaje ("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
+    }
+    if(StringUtils.isBlank(dtoproyecto.getNombreP())){
+        return new ResponseEntity(new Mensaje("El campo no puede estar vacío"), HttpStatus.BAD_REQUEST);
+    }
+    Proyecto proyecto = sProyecto.getOne(id).get();
+    
+    proyecto.setNombreP(dtoproyecto.getNombreP());
+    
+    proyecto.setDescripcionP(dtoproyecto.getDescripcionP());
+    
+    sProyecto.save(proyecto);
+    
+    return new ResponseEntity(new Mensaje("Proyecto actualizado"), HttpStatus.OK);
+    }    
 }
 
 
