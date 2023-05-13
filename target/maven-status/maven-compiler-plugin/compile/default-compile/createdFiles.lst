@@ -1,11 +1,9 @@
 com\portfolio\rgv\Repository\IPersonaRepository.class
 com\portfolio\rgv\Repository\REducacion.class
 com\portfolio\rgv\Security\MainSecurity.class
-com\portfolio\rgv\Controller\CProyecto.class
 com\portfolio\rgv\Security\Repository\IUsuarioRepository.class
 com\portfolio\rgv\Security\Service\RolService.class
 com\portfolio\rgv\Service\Shys.class
-com\portfolio\rgv\Dto\dtoProyecto.class
 com\portfolio\rgv\Security\Dto\NuevoUsuario.class
 com\portfolio\rgv\Security\Entity\UsuarioPrincipal.class
 com\portfolio\rgv\Entity\Persona.class
@@ -21,7 +19,6 @@ com\portfolio\rgv\Dto\dtoPersona.class
 com\portfolio\rgv\Security\Controller\Mensaje.class
 com\portfolio\rgv\Controller\PersonaController.class
 com\portfolio\rgv\Security\Dto\LoginUsuario.class
-com\portfolio\rgv\Service\Sproyecto.class
 com\portfolio\rgv\Dto\dtoHys.class
 com\portfolio\rgv\Security\Enums\RolNombre.class
 com\portfolio\rgv\Security\Entity\Usuario.class
@@ -31,13 +28,11 @@ com\portfolio\rgv\Controller\cHys.class
 com\portfolio\rgv\Dto\dtoExperiencia.class
 com\portfolio\rgv\Security\jwt\JwtEntryPoint.class
 com\portfolio\rgv\Service\ImpPersonaService.class
-com\portfolio\rgv\Entity\Proyecto.class
 com\portfolio\rgv\RgvApplication.class
 com\portfolio\rgv\Security\Entity\Rol.class
 com\portfolio\rgv\Security\Dto\JwtDto.class
 com\portfolio\rgv\Service\Seducacion.class
 com\portfolio\rgv\Repository\Rhys.class
-com\portfolio\rgv\Repository\RProyecto.class
 com\portfolio\rgv\Service\SExperiencia.class
 com\portfolio\rgv\Security\Service\UsuarioService.class
 com\portfolio\rgv\Security\Service\UserDetailsImpl.class
