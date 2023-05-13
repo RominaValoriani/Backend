@@ -70,7 +70,6 @@ public class CProyecto {
       sProyecto.save(proyecto);
       return new ResponseEntity(new Mensaje("Proyecto creado"), HttpStatus.OK);
     }
-    
 
     
     @PutMapping("/update/{id}")
@@ -79,7 +78,7 @@ public class CProyecto {
         return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
     }
     if(sProyecto.existsByNombreP(dtoproyecto.getNombreP()) && sProyecto.getByNombreP(dtoproyecto.getNombreP()).get().getId() != id){
-        return new ResponseEntity(new Mensaje ("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
     }
     if(StringUtils.isBlank(dtoproyecto.getNombreP())){
         return new ResponseEntity(new Mensaje("El campo no puede estar vacío"), HttpStatus.BAD_REQUEST);
@@ -95,5 +94,3 @@ public class CProyecto {
     return new ResponseEntity(new Mensaje("Proyecto actualizado"), HttpStatus.OK);
     }    
 }
-
-
