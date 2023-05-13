@@ -4,6 +4,7 @@
  */
 package com.portfolio.rgv.Entity;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,9 +19,7 @@ public class Proyecto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-   
     private String nombreP;
-    
     private String descripcionP;
 
     public Proyecto() {
@@ -54,4 +53,6 @@ public class Proyecto {
     public void setDescripcionP(String descripcionP) {
         this.descripcionP = descripcionP;
     }
+
+      
 }

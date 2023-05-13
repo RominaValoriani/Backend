@@ -6,10 +6,6 @@ package com.portfolio.rgv.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- *
- * @author Usuario
- */
 public class dtoProyecto {
     @NotBlank
     private String nombreP;

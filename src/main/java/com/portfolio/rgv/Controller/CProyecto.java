@@ -23,10 +23,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author Usuario
- */
+
 @RestController
 @RequestMapping("/proyecto")
 @CrossOrigin(origins = "https://frontend-ap-rv.web.app")
@@ -58,7 +55,7 @@ public class CProyecto {
         return new ResponseEntity(new Mensaje("Proyecto eliminado"), HttpStatus.OK);
     }
     
-    @PostMapping("create")
+    @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoProyecto dtoproyecto){
       if(StringUtils.isBlank(dtoproyecto.getNombreP()))  {
           return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
@@ -68,11 +65,13 @@ public class CProyecto {
       }
       
       Proyecto proyecto = new Proyecto(
-              dtoproyecto.getNombreP(), dtoproyecto.getDescripcionP()
+            dtoproyecto.getNombreP(), dtoproyecto.getDescripcionP()
       );
       sProyecto.save(proyecto);
       return new ResponseEntity(new Mensaje("Proyecto creado"), HttpStatus.OK);
     }
+    
+
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoProyecto dtoproyecto){
