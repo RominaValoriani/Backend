@@ -1,4 +1,4 @@
-/*
+
 package com.portfolio.rgv.Entity;
 
 
@@ -50,4 +50,3 @@ public class Proyecto {
 
       
 }
-*/

@@ -1,4 +1,3 @@
-/*
 
 package com.portfolio.rgv.Service;
 
@@ -44,4 +43,3 @@ public class Sproyecto {
         return rProyecto.existsByNombreP(nombreP);
     }
 }
-*/

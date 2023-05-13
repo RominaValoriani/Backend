@@ -1,4 +1,4 @@
-/*
+
 package com.portfolio.rgv.Dto;
 
 import javax.validation.constraints.NotBlank;
@@ -34,4 +34,3 @@ public class dtoProyecto {
     }
     
 }
-*/

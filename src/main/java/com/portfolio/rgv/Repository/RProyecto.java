@@ -1,4 +1,4 @@
-/*
+
 package com.portfolio.rgv.Repository;
 
 
@@ -14,4 +14,3 @@ public interface RProyecto extends JpaRepository<Proyecto, Integer> {
 }
 
 
-*/

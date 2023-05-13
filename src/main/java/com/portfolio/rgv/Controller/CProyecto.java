@@ -1,4 +1,4 @@
-/*
+
 package com.portfolio.rgv.Controller;
 
 import com.portfolio.rgv.Dto.dtoProyecto;
@@ -91,4 +91,3 @@ public class CProyecto {
     return new ResponseEntity(new Mensaje("Proyecto actualizado"), HttpStatus.OK);
     }    
 }
-*/
