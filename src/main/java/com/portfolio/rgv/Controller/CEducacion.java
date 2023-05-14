@@ -73,8 +73,7 @@ public class CEducacion {
                 dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE()
             );
         sEducacion.save(educacion);
-        return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);
-                
+        return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);           
     }
     
     @PutMapping("/update/{id}")

@@ -10,11 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+
+
 @Service
 @Transactional
 public class Sproyecto {
     @Autowired
     RProyecto rProyecto;
+    
     public List<Proyecto> list(){
         return rProyecto.findAll();
     }
@@ -24,7 +27,7 @@ public class Sproyecto {
     }
     
     public Optional<Proyecto> getByNombreP(String nombreP){
-        return rProyecto.findbyNombreP(nombreP);
+        return rProyecto.findByNombreP(nombreP);
     }
     
     public void save(Proyecto proyecto){
